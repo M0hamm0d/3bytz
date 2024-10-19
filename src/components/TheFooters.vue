@@ -1,6 +1,10 @@
 <script setup>
 import emailSvg from '../assets/images/email-svg.png'
 import logo from '../assets/images/3bytzLogo.png'
+import fbLogo from '../assets/images/fb.png'
+import twLogo from '../assets/images/TW.png'
+import igLogo from '../assets/images/Ig.png'
+import lnLogo from '../assets/images/Ln.png'
 </script>
 <template>
   <footer class="footer">
@@ -26,7 +30,35 @@ import logo from '../assets/images/3bytzLogo.png'
         <img :src="logo" alt="" />
       </div>
       <div class="socialAccounts">
-        <div class="email">Contact <a href="#">info@3bytz.com</a></div>
+        <div class="email">
+          Contact <a href="mailto:info@3bytz.com">info@3bytz.com</a>
+        </div>
+        <div class="socialPages">
+          <p class="follow">Follow Us</p>
+          <div class="socialLogos">
+            <a href="#">
+              <img :src="fbLogo" alt="" />
+            </a>
+            <a href="#">
+              <img :src="twLogo" alt="" />
+            </a>
+            <a href="#">
+              <img :src="igLogo" alt="" />
+            </a>
+            <a href="#">
+              <img :src="lnLogo" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyrightSection">
+      <div class="privacy">
+        <p>Privacy Policy</p>
+        <p>Terms of Use</p>
+      </div>
+      <div class="copyright">
+        © 2023 . Powered by <span>3bytz</span>. All Rights Reserved.
       </div>
     </div>
   </footer>
@@ -35,6 +67,8 @@ import logo from '../assets/images/3bytzLogo.png'
 .footer {
   padding: 56px 40px 56px 40px;
   gap: 64px;
+  display: flex;
+  flex-direction: column;
   opacity: 0px;
   background: #fbfcff;
   font-family: Inter;
@@ -111,5 +145,41 @@ import logo from '../assets/images/3bytzLogo.png'
 }
 .email {
   font-family: Inter;
+}
+.socialAccounts {
+  display: flex;
+  gap: 56px;
+  align-items: center;
+}
+.socialPages {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.socialLogos {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.follow {
+  font-family: Inter;
+}
+.copyrightSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.privacy {
+  display: flex;
+  gap: 64px;
+  align-items: center;
+  font-family: Inter;
+}
+.privacy > p {
+  font-family: Inter;
+}
+.copyright {
+  font-family: Inter;
+  color: #46464d;
 }
 </style>
