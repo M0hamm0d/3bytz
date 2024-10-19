@@ -2,6 +2,8 @@
 
 <template>
   <div class="container">
-    <h1>Welcome</h1>
+    <div class="container">Welcome</div>
   </div>
 </template>
+
+<style scoped></style>
