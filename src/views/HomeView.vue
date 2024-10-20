@@ -1,5 +1,6 @@
 <script setup>
 import TheButton from '../components/TheButtons.vue'
+import TheAccordion from '@/components/TheAccordion.vue'
 import heroImg from '../assets/images/heroImg.png'
 import hero1 from '../assets/images/hero1.png'
 import hero2 from '../assets/images/hero2.png'
@@ -258,7 +259,9 @@ import collaboration from '../assets/images/collaboration.png'
         </div>
       </div>
     </div>
-    <div class="faqQuestion"></div>
+    <div class="faqQuestion">
+      <TheAccordion />
+    </div>
   </div>
 </template>
 
