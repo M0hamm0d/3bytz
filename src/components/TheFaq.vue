@@ -1,0 +1,62 @@
+<script setup>
+defineProps(['faq'])
+const emit = defineEmits(['toggleAnswer'])
+const handleClick = id => emit('toggleAnswer', id)
+</script>
+<template>
+  <div class="faq">
+    <div class="header" @click="() => handleClick(faq.id)">
+      <div class="question">
+        {{ faq.question }}
+      </div>
+      <div :class="['icon', { open: faq.isOpen }]">
+        +
+        <!-- <img src="" alt="" /> -->
+      </div>
+    </div>
+    <div :class="['answer', { open: faq.isOpen }]">
+      <p>{{ faq.answer }}</p>
+    </div>
+  </div>
+</template>
+<style scoped>
+.faq {
+  /* padding: 12px; */
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 16px; */
+  flex-grow: 1;
+  border: 1px solid #e2e2e5;
+  border-radius: 8px;
+  background: #fcfcfc;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  padding: 16px 0;
+  cursor: pointer;
+  width: 100%;
+}
+.header .open {
+  transform: rotate(30deg);
+}
+.question {
+  font-weight: 700;
+}
+.answer {
+  height: 0;
+  overflow: hidden;
+  /* padding: 0 16px; */
+  /* transition: height 0.5s; */
+  /* display: none; */
+}
+.answer.open {
+  padding: 0 0px 16px;
+  overflow: visible;
+  height: 100%;
+  transition: height 0.5s;
+}
+</style>
