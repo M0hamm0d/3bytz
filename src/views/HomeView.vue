@@ -20,6 +20,7 @@ import versatility from '../assets/images/versatility.png'
 import excellence from '../assets/images/excellence.png'
 import integrity from '../assets/images/integrity.png'
 import collaboration from '../assets/images/collaboration.png'
+import GetInTouch from '@/components/GetInTouch.vue'
 </script>
 
 <template>
@@ -259,9 +260,17 @@ import collaboration from '../assets/images/collaboration.png'
         </div>
       </div>
     </div>
-    <div class="faqQuestion">
+    <div class="faqQuestionContainer">
+      <div class="faqQuestion">
+        <h3>Frequently Asked Questions</h3>
+        <p>
+          If your question is not answered on our FAQ section, feel free to
+          contact us and we will ensure to resolve your enquiries.
+        </p>
+      </div>
       <TheAccordion />
     </div>
+    <GetInTouch />
   </div>
 </template>
 
@@ -415,13 +424,15 @@ import collaboration from '../assets/images/collaboration.png'
   gap: 8px;
 }
 .readyToServeHeader h3,
-.whyChooseUsHeader h3 {
+.whyChooseUsHeader h3,
+.faqQuestion h3 {
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
 }
 .readyToServeHeader p,
-.whyChooseUsHeader p {
+.whyChooseUsHeader p,
+.faqQuestion p {
   font-size: 18px;
   line-height: 26px;
 }
@@ -510,5 +521,15 @@ import collaboration from '../assets/images/collaboration.png'
 }
 .innovation img {
   width: 100%;
+}
+.faqQuestionContainer {
+  display: flex;
+  padding: 50px 100px 50px 100px;
+  justify-content: space-between;
+}
+.faqQuestion {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 </style>
