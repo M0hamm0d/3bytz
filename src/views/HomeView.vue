@@ -2,10 +2,6 @@
 import TheButton from '../components/TheButtons.vue'
 import TheAccordion from '@/components/TheAccordion.vue'
 import heroImg from '../assets/images/heroImg.png'
-import hero1 from '../assets/images/hero1.png'
-import hero2 from '../assets/images/hero2.png'
-import hero3 from '../assets/images/hero3.png'
-import hero4 from '../assets/images/hero4.png'
 import transistor from '../assets/images/transistor.png'
 import statamic from '../assets/images/statamic.png'
 import savvycal from '../assets/images/savvycal.png'
@@ -13,14 +9,17 @@ import tuple from '../assets/images/tuple.png'
 import reform from '../assets/images/reform.png'
 import adsClick from '../assets/images/ads_click.png'
 import arrowRight from '../assets/images/arrow-right.png'
-import reviewStars from '../assets/images/reviewStars.png'
 import readyToServe1 from '../assets/images/ready-to-serve-1.png'
+import readyToServe2 from '../assets/images/ready-to-serve-2.png'
+import readyToServe3 from '../assets/images/ready-to-serve-3.png'
+import readyToServe4 from '../assets/images/ready-to-serve-4.png'
 import innovation from '../assets/images/innivation.png'
 import versatility from '../assets/images/versatility.png'
 import excellence from '../assets/images/excellence.png'
 import integrity from '../assets/images/integrity.png'
 import collaboration from '../assets/images/collaboration.png'
 import GetInTouch from '@/components/GetInTouch.vue'
+import TheReviews from '@/components/TheReviews.vue'
 </script>
 
 <template>
@@ -28,18 +27,7 @@ import GetInTouch from '@/components/GetInTouch.vue'
     <div class="heroSection">
       <div class="techSolutionContainer">
         <div class="techSolution">
-          <div class="reviews">
-            <div class="reviewFaces">
-              <img :src="hero1" alt="" />
-              <img :src="hero2" alt="" />
-              <img :src="hero3" alt="" />
-              <img :src="hero4" alt="" />
-            </div>
-            <div class="reviewStars">
-              <img :src="reviewStars" alt="" />
-              <p>from 300+ reviews</p>
-            </div>
-          </div>
+          <TheReviews justify="center" />
           <h1>
             Providing Tech Solutions By Pushing <span>One Byte</span> at a time
           </h1>
@@ -137,7 +125,7 @@ import GetInTouch from '@/components/GetInTouch.vue'
         </div>
         <div class="readyToServeCard">
           <div class="readyToServeImg">
-            <img :src="readyToServe1" alt="" />
+            <img :src="readyToServe2" alt="" />
           </div>
           <div class="readyToServeText">
             <h3>Digital Skills Training</h3>
@@ -149,7 +137,7 @@ import GetInTouch from '@/components/GetInTouch.vue'
         </div>
         <div class="readyToServeCard">
           <div class="readyToServeImg">
-            <img :src="readyToServe1" alt="" />
+            <img :src="readyToServe3" alt="" />
           </div>
           <div class="readyToServeText">
             <h3>Brand Strategy Formulation</h3>
@@ -161,7 +149,7 @@ import GetInTouch from '@/components/GetInTouch.vue'
         </div>
         <div class="readyToServeCard">
           <div class="readyToServeImg">
-            <img :src="readyToServe1" alt="" />
+            <img :src="readyToServe4" alt="" />
           </div>
           <div class="readyToServeText">
             <h3>IT & Hardware Support</h3>
@@ -270,7 +258,11 @@ import GetInTouch from '@/components/GetInTouch.vue'
       </div>
       <TheAccordion />
     </div>
-    <GetInTouch />
+    <GetInTouch
+      h1="Get in Touch"
+      text="Need more information? Reach our to us"
+      btnText="Book a Free Consultation"
+    />
   </div>
 </template>
 
@@ -292,16 +284,6 @@ import GetInTouch from '@/components/GetInTouch.vue'
   gap: 12px;
   max-width: 1021px;
   margin: 0 auto;
-}
-.reviews {
-  display: flex;
-  gap: 5px;
-  justify-content: center;
-}
-.reviewStars {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
 }
 .techSolution h1 {
   font-size: 51px;
@@ -531,5 +513,6 @@ import GetInTouch from '@/components/GetInTouch.vue'
   display: flex;
   flex-direction: column;
   gap: 8px;
+  /* max-width: 507px; */
 }
 </style>
