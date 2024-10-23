@@ -25,6 +25,7 @@ const handleClick = id => emit('toggleAnswer', id)
   padding: 0 16px;
   display: flex;
   flex-direction: column;
+  /* transition: 0.25s; */
   /* gap: 16px; */
   flex-grow: 1;
   border: 1px solid #e2e2e5;
@@ -45,18 +46,15 @@ const handleClick = id => emit('toggleAnswer', id)
 }
 .question {
   font-weight: 700;
+  /* transition: 0.25s; */
 }
 .answer {
   height: 0;
   overflow: hidden;
-  /* padding: 0 16px; */
-  /* transition: height 0.5s; */
-  /* display: none; */
 }
 .answer.open {
   padding: 0 0px 16px;
   overflow: visible;
   height: 100%;
-  transition: height 0.5s;
 }
 </style>

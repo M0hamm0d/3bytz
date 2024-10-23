@@ -2,6 +2,7 @@
 import inTouch from '../assets/images/inTouch.png'
 import getInTouch from '../assets/images/getInTouch.png'
 import TheButton from './TheButtons.vue'
+defineProps(['h1', 'text', 'btnText'])
 </script>
 <template>
   <div class="getInTouch">
@@ -11,16 +12,11 @@ import TheButton from './TheButtons.vue'
     </div>
     <div class="overlayText">
       <div class="top">
-        <h1>Get in Touch</h1>
-        <p>Need more information? Reach out to us</p>
+        <h1>{{ h1 }}</h1>
+        <p>{{ text }}</p>
       </div>
       <div class="btn">
-        <TheButton
-          text="Book a Free Consultation"
-          bg="#fcfcfe"
-          color="#060320"
-          pixel="1px"
-        />
+        <TheButton :text="btnText" bg="#fcfcfe" color="#060320" pixel="1px" />
       </div>
     </div>
   </div>
