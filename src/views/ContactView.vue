@@ -112,8 +112,6 @@
   align-items: flex-start;
   height: 100%;
 }
-.message input {
-}
 .email,
 .phone-no {
   display: flex;
