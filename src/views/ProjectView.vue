@@ -149,13 +149,13 @@ import GetInTouch from '@/components/GetInTouch.vue'
           <button class="">Get Started</button>
         </div>
         <div class="standard-plan">
-          <p>*Recomended</p>
+          <p>*Recommended</p>
           <div class="standard-plan-basic">
             <div class="plan-card-header">
-              <p>Premium Plan</p>
+              <p>Standard Plan</p>
               <div class="plan-card-title">
                 <h6>₦</h6>
-                <h1>850k/</h1>
+                <h1>450k/</h1>
                 <p>per month</p>
               </div>
             </div>
@@ -165,59 +165,50 @@ import GetInTouch from '@/components/GetInTouch.vue'
               <div class="what-included-body">
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>Everything in Standard Plan</p>
+                  <p>Everything in Basic Plan</p>
                 </div>
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>Up to 12 pages design and development</p>
+                  <p>Up to 8 pages design and development</p>
                 </div>
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>Offline website usage capability</p>
+                  <p>Enhanced design element and layout</p>
                 </div>
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>Website downloadability</p>
+                  <p>Security Features</p>
                 </div>
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>Priority customer support</p>
+                  <p>Google analytics</p>
                 </div>
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>
-                    On-page and off-page optimization, content optimization, and
-                    link building
-                  </p>
+                  <p>Mobile responsiveness</p>
                 </div>
                 <div class="">
                   <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
+                    <img src="../assets/images/editor_choice.png" alt="" />
                   </div>
-                  <p>Regular security audits</p>
-                </div>
-                <div class="">
-                  <div class="">
-                    <img src="../assets/images/check_circle.png" alt="" />
-                  </div>
-                  <p>Dedicated support team</p>
+                  <p>Domain and Hosting</p>
                 </div>
               </div>
             </div>
             <div class="line"></div>
-            <button class="">Start a trial</button>
+            <button class="">Subscribe to plan</button>
           </div>
         </div>
         <div class="basic-plan">
@@ -235,7 +226,7 @@ import GetInTouch from '@/components/GetInTouch.vue'
             <div class="what-included-body">
               <div class="">
                 <div class="">
-                  <img src="../assets/images/check_circle.png" alt="" />
+                  <img src="../assets/images/editor_choice.png" alt="" />
                 </div>
                 <p>Everything in Standard Plan</p>
               </div>
