@@ -34,13 +34,20 @@
           </div>
           <div class="message">
             <h3>Message</h3>
-            <div class="input">
-              <input type="text" placeholder="Type your message" />
-            </div>
+            <input type="text" placeholder="Type your message" />
           </div>
         </div>
       </div>
     </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.00256195541!2d4.583551023522406!3d8.499130297061162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364d0a5a336787%3A0x6af10e1c8ad6c446!2sShoprite%20Kwara%20Mall!5e0!3m2!1sen!2sng!4v1729891708614!5m2!1sen!2sng"
+      width="100%"
+      height="500px"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
   </div>
 </template>
 <style scoped>
@@ -106,7 +113,7 @@
   gap: 12px;
   height: 100%;
 }
-.location-address .message .input {
+.location-address .message input {
   display: flex;
   flex: 1;
   align-items: flex-start;
