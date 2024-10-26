@@ -135,5 +135,4 @@
   border-radius: 8px;
   border: 1px solid #e5e2e1;
 }
-/* end */
 </style>
