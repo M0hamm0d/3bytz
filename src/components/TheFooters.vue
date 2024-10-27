@@ -25,11 +25,44 @@ import lnLogo from '../assets/images/Ln.png'
         <button class="subscribe">Subscribe</button>
       </div>
     </div>
-    <div class="ourSocials">
-      <div class="logo">
-        <img :src="logo" alt="" />
+    <div class="our-social-container">
+      <div class="ourSocials">
+        <div class="logo">
+          <img :src="logo" alt="" />
+        </div>
+        <div class="socialAccounts">
+          <div class="email">
+            Contact <a href="mailto:info@3bytz.com">info@3bytz.com</a>
+          </div>
+          <div class="socialPages">
+            <p class="follow">Follow Us</p>
+            <div class="socialLogos">
+              <a href="#">
+                <img :src="fbLogo" alt="" />
+              </a>
+              <a href="#">
+                <img :src="twLogo" alt="" />
+              </a>
+              <a href="#">
+                <img :src="igLogo" alt="" />
+              </a>
+              <a href="#">
+                <img :src="lnLogo" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="socialAccounts">
+      <div class="copyrightSection">
+        <div class="privacy">
+          <p>Privacy Policy</p>
+          <p>Terms of Use</p>
+        </div>
+        <div class="copyright">
+          © 2023 . Powered by <span>3bytz</span>. All Rights Reserved.
+        </div>
+      </div>
+      <div class="socialAccountsMobile">
         <div class="email">
           Contact <a href="mailto:info@3bytz.com">info@3bytz.com</a>
         </div>
@@ -52,15 +85,6 @@ import lnLogo from '../assets/images/Ln.png'
         </div>
       </div>
     </div>
-    <div class="copyrightSection">
-      <div class="privacy">
-        <p>Privacy Policy</p>
-        <p>Terms of Use</p>
-      </div>
-      <div class="copyright">
-        © 2023 . Powered by <span>3bytz</span>. All Rights Reserved.
-      </div>
-    </div>
   </footer>
 </template>
 <style scoped>
@@ -73,13 +97,18 @@ import lnLogo from '../assets/images/Ln.png'
   background: #fbfcff;
   font-family: Inter;
 }
+.our-social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
 .newsletterSubscribe {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 .subReason {
-  width: 384px;
+  max-width: 384px;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -103,11 +132,10 @@ import lnLogo from '../assets/images/Ln.png'
   display: flex;
   justify-content: center;
   gap: 16px;
-  width: 462px;
+  max-width: 462px;
   margin: auto;
 }
 .input {
-  /* width: 319px; */
   height: 40px;
   display: flex;
   flex: 1;
@@ -181,5 +209,43 @@ import lnLogo from '../assets/images/Ln.png'
 .copyright {
   font-family: Inter;
   color: #46464d;
+}
+.socialAccountsMobile {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 56px 24px 56px 24px;
+  }
+  .ourSocials {
+    justify-content: center;
+  }
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+  .socialAccounts {
+    display: none;
+  }
+  .copyrightSection {
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .privacy {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .our-social-container {
+    gap: 16px;
+  }
+  .copyrightSection {
+    gap: 8px;
+  }
+  .socialAccountsMobile {
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 </style>

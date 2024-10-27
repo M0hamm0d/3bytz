@@ -45,4 +45,12 @@ import TheButton from '../components/TheButtons.vue'
   display: flex;
   gap: 16px;
 }
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 24px;
+  }
+  .navigation {
+    display: none;
+  }
+}
 </style>
