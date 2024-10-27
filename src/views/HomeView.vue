@@ -513,6 +513,67 @@ import TheReviews from '@/components/TheReviews.vue'
   display: flex;
   flex-direction: column;
   gap: 8px;
-  /* max-width: 507px; */
+}
+
+@media screen and (max-width: 640px) {
+  .heroSection {
+    padding: 50px 24px;
+  }
+  .techSolution h1 {
+    font-size: 32px;
+  }
+  .ourTrusteeContainer {
+    padding: 24px;
+  }
+  .companyNumber {
+    font-size: 12px;
+  }
+  .trustedBankLogo {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .aboutUsContainer {
+    flex-direction: column;
+    padding: 50px 24px;
+  }
+  .readyToServeCards,
+  .whyChooseUsCards1,
+  .whyChooseUsCards2 {
+    flex-direction: column;
+  }
+  .readyToServe {
+    padding: 50px 24px;
+  }
+  .whyChooseUsHeader {
+    padding: 50px 24px 0px 24px;
+  }
+  .whyChooseUsHeader h1 {
+    font-size: 18px;
+  }
+  .whyChooseUsHeader p,
+  .aboutUs p {
+    font-size: 16px;
+  }
+  .whyChooseUsBody {
+    padding: 50px 24px;
+  }
+  .faqQuestionContainer {
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+  }
+  .faqQuestion {
+    gap: 4px;
+  }
+  .faqQuestion h3 {
+    font-size: 20px;
+  }
+  .readyToServeHeader h1 {
+    font-size: 18px;
+  }
+  .faqQuestion p,
+  .readyToServeHeader p {
+    font-size: 16px;
+  }
 }
 </style>
