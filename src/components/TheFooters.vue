@@ -2,7 +2,7 @@
 import emailSvg from '../assets/images/email-svg.png'
 import logo from '../assets/images/3bytzLogo.png'
 import twLogo from '../assets/images/TW.png'
-import fbLogo from '../assets/images/fb.png'
+import fbLogo from '../assets/images/Fb.png'
 import igLogo from '../assets/images/Ig.png'
 import lnLogo from '../assets/images/Ln.png'
 </script>
