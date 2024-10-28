@@ -349,6 +349,10 @@ import TheReviews from '@/components/TheReviews.vue'
   justify-content: space-between;
   margin: 0 auto;
 }
+.trustedBankLogo img {
+  max-width: 158px;
+  width: 100%;
+}
 .aboutUsContainer {
   padding: 50px 100px 50px 100px;
   gap: 16px;
@@ -428,7 +432,7 @@ import TheReviews from '@/components/TheReviews.vue'
   display: flex;
   flex-direction: column;
   gap: 24px;
-  border-radius: 12px 0px 0px 0px;
+  border-radius: 12px;
   border: 1px solid #eae7e7;
   opacity: 0px;
 }
@@ -531,6 +535,10 @@ import TheReviews from '@/components/TheReviews.vue'
   .trustedBankLogo {
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
+  }
+  .trustedBankLogo img {
+    width: 45%;
   }
   .aboutUsContainer {
     flex-direction: column;
@@ -544,6 +552,12 @@ import TheReviews from '@/components/TheReviews.vue'
   .readyToServe {
     padding: 50px 24px;
   }
+  .whyChooseUsCard {
+    gap: 30px;
+  }
+  .whyChooseUsCardBodyTop p {
+    font-size: 16px;
+  }
   .whyChooseUsHeader {
     padding: 50px 24px 0px 24px;
   }
@@ -556,6 +570,9 @@ import TheReviews from '@/components/TheReviews.vue'
   }
   .whyChooseUsBody {
     padding: 50px 24px;
+  }
+  .whyChooseUsNumber {
+    padding: 10px 20px;
   }
   .faqQuestionContainer {
     flex-direction: column;
