@@ -593,4 +593,5 @@ import TheReviews from '@/components/TheReviews.vue'
     font-size: 16px;
   }
 }
+/* end */
 </style>
