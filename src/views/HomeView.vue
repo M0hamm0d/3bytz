@@ -512,10 +512,12 @@ import TheReviews from '@/components/TheReviews.vue'
   display: flex;
   padding: 50px 100px 50px 100px;
   justify-content: space-between;
+  gap: 50px;
 }
 .faqQuestion {
   display: flex;
   flex-direction: column;
+  flex: 1;
   gap: 8px;
 }
 

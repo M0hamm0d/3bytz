@@ -42,7 +42,7 @@ const toggleAnswer = id => {
 }
 </script>
 <template>
-  <main class="">
+  <main class="faqs-container">
     <div class="faqs">
       <TheFaq
         v-for="faq in faqs"
@@ -54,9 +54,15 @@ const toggleAnswer = id => {
   </main>
 </template>
 <style scoped>
+.faqs-container {
+  display: flex;
+  flex: 1.2;
+  width: 100%;
+}
 .faqs {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
 }
 </style>
