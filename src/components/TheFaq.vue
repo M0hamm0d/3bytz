@@ -14,9 +14,14 @@ const handleClick = id => emit('toggleAnswer', id)
         <!-- <img src="" alt="" /> -->
       </div>
     </div>
-    <div :class="['answer', { open: faq.isOpen }]">
+    <!-- <div :class="['answer', { open: faq.isOpen }]">
       <p>{{ faq.answer }}</p>
-    </div>
+    </div> -->
+    <Transition>
+      <div v-if="faq.isOpen" :class="['answer', { open: faq.isOpen }]">
+        <p>{{ faq.answer }}</p>
+      </div>
+    </Transition>
   </div>
 </template>
 <style scoped>
@@ -43,6 +48,7 @@ const handleClick = id => emit('toggleAnswer', id)
 }
 .header .open {
   transform: rotate(30deg);
+  transition: 3s;
 }
 .question {
   font-weight: 700;
@@ -56,5 +62,14 @@ const handleClick = id => emit('toggleAnswer', id)
   padding: 0 0px 16px;
   overflow: visible;
   height: 100%;
+}
+
+.v-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
 }
 </style>
